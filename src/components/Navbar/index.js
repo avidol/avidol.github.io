@@ -14,14 +14,14 @@ export default function Navbar() {
 
 				<NavMenu>
 					<NavLink to='/home' activeStyle>
-						Home
-					</NavLink>
-					<NavLink to='/hills' activeStyle>
-						Hills
+						<img src='AvijitTravelBlog.png' alt='Avijits Travel Blog' width="120" height="70" />
 					</NavLink>
 					<NavLink to='/seabeaches' activeStyle>
 						Sea Beaches
 					</NavLink>
+					<NavLink to='/hills' activeStyle>
+						Hills
+					</NavLink>					
 					<NavLink to='/historicsites' activeStyle>
 						Historic Sites
 					</NavLink>

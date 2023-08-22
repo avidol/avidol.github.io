@@ -3,9 +3,9 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
-import Hills from './pages/hills';
-import Seabeaches from './pages/seabeaches';
 import Historicsites from './pages/historicsites';
+import Beaches from './components/Beaches';
+ 
 import About from './pages/about';
 
 function App() {
@@ -13,11 +13,10 @@ function App() {
 		<Router>
 			<Navbar />
 			<Routes>
-				<Route path='/home' exact component={Home} />
-				<Route path='/hills' component={Hills} />
-				<Route path='/seabeaches' component={Seabeaches} />
-				<Route path='/historicsites' component={Historicsites} />
-				<Route path='/about' component={About} />
+				<Route path='/seabeaches' element={<Beaches />} />
+				<Route path='/hills' element={<Home />} />
+				<Route path='/historicsites' element={<Historicsites />} />
+				<Route path='/about' element={<About />} />
 			</Routes>
 		</Router>
 	);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hills () {
+export default function Home () {
 	return (
 		<div
 			style={{
@@ -10,9 +10,9 @@ export default function Hills () {
 				height: '100vh'
 			}}
 		>
-			<h1>Hills</h1>
+			<h1>Welcome to Home Page</h1>
 		</div>
 	);
 };
 
-// export default Hills;
+
