@@ -1,5 +1,5 @@
 import React from "react";
-import BeachesData from "../data/beaches";
+import HillsData from "../data/hills";
 import Card from 'react-bootstrap/Card';
 // import CardGroup from 'react-bootstrap/CardGroup';
 
@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
 
-function Beaches() {
+function Hills() {
     const imagePath = "/images/";
     const columnsPerRow = 4;
 
@@ -39,7 +39,7 @@ function Beaches() {
 
 
     const getColumnsForRow = () => {
-        let items = BeachesData.map((item, index) => {
+        let items = HillsData.map((item, index) => {
             return (
                 <Col md={4}>
                     <Card key={item.id} sx={{ height: "100%" }}>
@@ -171,4 +171,4 @@ function Beaches() {
     );
 
 }
-export default Beaches;
+export default Hills;
